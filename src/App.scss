@@ -1,0 +1,80 @@
+header {
+    text-align: center;
+    background: #f6f6f6;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    box-shadow: 3px 2px 1px 1px rgb(157, 157, 157);
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+#myform {
+    background: var(--bs-orange);
+    padding: 25px;
+    border-radius: 7px;
+}
+.todoListGroup {
+    max-height: 67vh;
+    position: relative;
+    overflow: auto;
+}
+.itemContentWrapper {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 0.5rem 0.9rem 0.5rem 1.5rem;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 3px;
+        height: calc(100% - 20px);
+        background: var(--bs-orange);
+        border-radius: 13px;
+    }
+    .deleteBtn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #000;
+        border-radius: 50%;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .itemName {
+        font-size: 15px;
+        display: block;
+        border-bottom: 1px solid #dedede;
+        padding: 0 0 5px 0px;
+        margin: 0 0 5px 0px;
+        min-height: 51px;
+    }
+    .date {
+        font-size: 12px;
+        color: #858585;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+@keyframes fadeInDown{
+    from{opacity:0;-webkit-transform:translate3d(0, -100%, 0);transform:translate3d(0, -100%, 0);}
+    to{opacity:1;-webkit-transform:none;transform:none;}
+}
+
