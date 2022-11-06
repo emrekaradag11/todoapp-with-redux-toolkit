@@ -1,4 +1,4 @@
-# React Text Editor
+# Todo App with Redux Toolkit
 
 ### `npm start`
 
